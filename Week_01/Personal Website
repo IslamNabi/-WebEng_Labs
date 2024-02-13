@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<title>Islam Nabi--- Personal Website</title>
+  <style>
+    nav {
+      margin-top: 30px;
+      display: flex;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 30px;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 30px;
+    }
+ 
+
+  
+  </style>
+</head>
+<body>
+
+  <header style="text-align: center;">
+    <h1>Islam Nabi</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#interests">Interests</a></li>
+    </ul>
+  </nav>
+
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>This is Islam Nabi, Computer Science Student at SIBA</p>
+  </section>
+
+  <section id="classes">
+    <h2>Classes</h2>
+    <ul>
+      <li><a href="#task-3">Task 3 Markup</a></li>
+      <li><a href="#task-4">Task 4 Spreadsheets</a></li>
+      <li><a href="#task-5">Task 5 Relational Databases</a></li>
+      <li><a href="#task-6">Task 6 Presentational Graphics</a></li>
+    </ul>
+  </section>
+
+  <section id="interests">
+    <h2>Interests</h2>
+    <p>I have intrest in AI and Machine Learning </p>
+  </section>
+
+  <footer>
+    <p>Last updated on 13-02-2024</p>
+  </footer>
+
+</body>
+</html>
