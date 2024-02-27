@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<title>Add Column Game</title>
+<style>
+    #container {
+        display: flex;
+        height: 100px; /* Set a fixed height for the container */
+    }
+    .column {
+        width: 50px;
+        margin: 0 5px;
+        background-color: #e76666;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <!-- Columns will be added here -->
+    </div>
+    <button onclick="addColumn()">+</button>
+    <button onclick="generateColors()">Generate</button>
+
+    <script>
+        let colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+        let colorIndex = 0;
+
+        function addColumn() {
+            var container = document.getElementById('container');
+            var column = document.createElement('div');
+            column.className = 'column';
+            column.style.backgroundColor = colors[colorIndex % colors.length];
+            colorIndex++;
+            container.appendChild(column);
+        }
+
+        function generateColors() {
+    var columns = document.querySelectorAll('.column');
+    columns.forEach(function(column, index) {
+        // Calculate the color index based on the total number of columns
+        var colorIndex = index % colors.length;
+        // Assign the color to the column
+        column.style.backgroundColor = colors[colorIndex];
+    });
+}
+   
+    </script>
+</body>
+</html>
