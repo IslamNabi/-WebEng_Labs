@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pricing Table </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <table>
+        <tr>
+        <th>Plan</th>
+        <th>Features</th>
+        <th>Price</th>
+        </tr>
+        <tr>
+        <td>Sprout</td>
+        <td>Limited features, perfect for trying out FloraCam</td>
+        <td>$5</td>
+        </tr>
+        <tr>
+        <td>Bloom</td>
+        <td>Most popular plan, ideal for casual photographers with FloraCam</td>
+        <td>$15</td>
+        </tr>
+        <tr>
+        <td>Flourish</td>
+        <td>All features, unlimited storage for professional FloraCam users</td>
+        <td>$25</td>
+        </tr>
+        </table>
+
+  </body>
+  </html>
