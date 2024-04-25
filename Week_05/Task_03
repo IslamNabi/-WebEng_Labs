@@ -1,0 +1,11 @@
+function applyFunctionToArray(inputArray, transformationFunction) {
+    let resultArray = [];
+    for (let i = 0; i < inputArray.length; i++) {
+        resultArray.push(transformationFunction(inputArray[i]));
+    }
+    return resultArray;
+}
+
+let array = [1, 2, 3];
+let doubleFunction = (x) => x * 2;
+console.log(applyFunctionToArray(array, doubleFunction));
