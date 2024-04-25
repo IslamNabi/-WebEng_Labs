@@ -1,0 +1,11 @@
+let car = {
+    brand: 'Honda City',
+    model: 'IVTEC',
+    year: 2023
+};
+
+function carInfo(carObj) {
+    return `The ${carObj.brand} ${carObj.model} was manufactured in ${carObj.year}.`;
+}
+
+console.log(carInfo(car)); 
