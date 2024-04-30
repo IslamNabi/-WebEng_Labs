@@ -1,0 +1,27 @@
+const addButton = document.getElementById("push");
+let taskCount = 0;
+
+function addTask() {
+    let taskInput = document.getElementById("text");
+
+    if (taskInput.value === "") {
+        alert("Task Field is empty");
+    } else {
+        const taskDiv = document.createElement("div");
+        const removeButton = document.createElement("button");
+        removeButton.textContent = 'Delete';
+
+        document.body.appendChild(removeButton);
+
+        taskDiv.innerText = taskInput.value;
+
+        const tasksContainer = document.getElementById('tasks');
+        tasksContainer.appendChild(taskDiv);
+
+        removeButton.addEventListener("click", function() {
+            tasksContainer.removeChild(taskDiv);
+        });
+    }
+}
+
+addButton.onclick = addTask;
